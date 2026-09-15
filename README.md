@@ -15,9 +15,9 @@ the intro exercises for our Basketball Stats App.
 
 | Folder | Exercise | When |
 |---|---|---|
-| `01-hello-html/` | Your first web page | Sep 10 — today |
-| `02-menu-buttons/` | Build the main menu (Teams / New Game / Pro Account) | Next week |
-| `03-roster-table/` | Start of the Teams screen | Sep 15+ |
+| `01-hello-html/` | Your first web page | Sep 10 |
+| `02-menu-buttons/` | Build the main menu (Teams / New Game / Pro Account) | Sep 15 |
+| `03-roster-table/` | Start of the Teams screen | Sep 17 |
 
 ## The git cycle (memorize this)
 
