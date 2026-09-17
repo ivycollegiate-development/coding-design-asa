@@ -8,7 +8,9 @@ Today you start building the Teams screen of our basketball app with HTML — th
 **Links you will need**
 
 - Your code workspace: https://vscode.ivycollegiate.org/ (sign in with your SCHOOL account — personal Gmail will not work)
-- Project repo: https://github.com/ivycollegiate-development/coding-design-asa
+- Your own repo: https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME (private — replace YOURUSERNAME with your code-server username; the exact name is in the setup sheet below)
+- Setup sheet: GitHub Account Setup — Coding/Design ASA (linked in today's Classwork assignment) — do this first if you have never cloned or pushed before
+- Reference project repo: https://github.com/ivycollegiate-development/coding-design-asa
 - Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0917 (linked in today's Classwork assignment)
 
 ---
@@ -17,14 +19,14 @@ Today you start building the Teams screen of our basketball app with HTML — th
 
 1. Open Chrome and go to https://vscode.ivycollegiate.org/ — click **Open your session** and sign in with your SCHOOL account.
 2. Click **Terminal** in the menu bar at the top of the window, then click **New Terminal**.
-3. Click inside the terminal, type exactly this, and press Enter after each line:
+3. Click inside the terminal, type exactly this, and press Enter after each line. **YOURUSERNAME is your code-server username — the exact repo name is in your row of the setup sheet.**
 
    ```
-   cd coding-design-asa
-   git pull
+   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME.git
+   cd asa-roster-page-part1-YOURUSERNAME
    ```
 
-   ☐ My terminal pulled the latest files with no red text. If it shows anything red, raise your hand.
+   ☐ My terminal cloned the repo with no red text. If it shows anything red, raise your hand.
 
 4. In the file tree on the left, click the folder named `03-roster-table`, then double-click the file named `index.html`. It opens in the editor.
 
@@ -115,7 +117,7 @@ Now break it:
    git push
    ```
 
-   Warning: if it asks for a password, it wants a Personal Access Token — the code I gave you in September. Paste it and press Enter. If you do not have it, raise your hand.
+   Warning: the first push asks for your GitHub **username** and then a **password**. The password is a Personal Access Token, never your GitHub password — see Part E of the setup sheet. If you do not have a token yet, raise your hand and we do it together.
 
    ☐ The push ended with something like `Writing objects: 100%`.
 
