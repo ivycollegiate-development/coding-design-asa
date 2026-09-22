@@ -8,7 +8,7 @@ Today you start building the Teams screen of our basketball app with HTML — th
 **Links you will need**
 
 - Your code workspace: https://vscode.ivycollegiate.org/ (sign in with your SCHOOL account — personal Gmail will not work)
-- Your own repo: https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME (private — replace YOURUSERNAME with your code-server username; the exact name is in the setup sheet below)
+- Your own repo: https://github.com/ivycollegiate-development/asa-roster-page-part1-$(whoami) (private — `$(whoami)` inserts your code-server username automatically, so copy the commands exactly as written)
 - Setup sheet: GitHub Account Setup — Coding/Design ASA (linked in today's Classwork assignment) — do this first if you have never cloned or pushed before
 - Reference project repo: https://github.com/ivycollegiate-development/coding-design-asa
 - Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0917 (linked in today's Classwork assignment)
@@ -19,14 +19,28 @@ Today you start building the Teams screen of our basketball app with HTML — th
 
 1. Open Chrome and go to https://vscode.ivycollegiate.org/ — click **Open your session** and sign in with your SCHOOL account.
 2. Click **Terminal** in the menu bar at the top of the window, then click **New Terminal**.
-3. Click inside the terminal, type exactly this, and press Enter after each line. **YOURUSERNAME is your code-server username — the exact repo name is in your row of the setup sheet.**
+3. Click inside the terminal and check whether you already have the repo from a previous session:
 
    ```
-   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME.git
-   cd asa-roster-page-part1-YOURUSERNAME
+   ls asa-roster-page-part1-$(whoami)
    ```
 
-   ☐ My terminal cloned the repo with no red text. If it shows anything red, raise your hand.
+   - If you see `No such file or directory`, clone it (type exactly this, pressing Enter after each line — `$(whoami)` inserts your code-server username automatically):
+
+     ```
+     git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-$(whoami).git
+     cd asa-roster-page-part1-$(whoami)
+     ```
+
+   - If the folder is already there, pull my latest updates before you work:
+
+     ```
+     cd asa-roster-page-part1-$(whoami)
+     git config pull.rebase false
+     git pull
+     ```
+
+   ☐ My terminal shows the repo (cloned or pulled) with no red text. If it shows anything red, raise your hand.
 
 4. In the file tree on the left, click the folder named `03-roster-table`, then double-click the file named `index.html`. It opens in the editor.
 
@@ -112,10 +126,14 @@ Now break it:
 1. Click in the terminal — press **Ctrl + C** once to stop the little server, then type exactly this, pressing Enter after each line:
 
    ```
+   git config pull.rebase false
+   git pull
    git add .
    git commit -m "roster page part 1"
    git push
    ```
+
+   If the push is rejected, run **git pull**, then **git push** again — that is normal, not an error.
 
    Warning: the first push asks for your GitHub **username** and then a **password**. The password is a Personal Access Token, never your GitHub password — see Part E of the setup sheet. If you do not have a token yet, raise your hand and we do it together.
 
@@ -123,9 +141,17 @@ Now break it:
 
 ---
 
-## Part 6 — Send me proof (5 min)
+## Part 6 — TURN IN — SCREENSHOTS (due end of class tonight)
 
-1. Take a screenshot of your Simple Browser showing your finished page (heading + table with your row).
+One screenshot showing, in order:
+
+1. Your Simple Browser with your finished roster page — your team name in the heading and your own row in the table.
+
+Then take a second screenshot of your repo on github.com so I can see your commit landed.
+
+(Screenshot keys — Chromebook: hold **Ctrl + Shift** and press **Show windows**; Windows: **Windows key + Shift + S**; Mac: **Cmd + Shift + 4**; iPad: side button + volume-up.)
+
+1. Take the first screenshot of your Simple Browser showing your finished page (heading + table with your row).
    - Chromebook: hold **Ctrl + Shift** and press the **Show windows** key
    - Windows: **Windows key + Shift + S**
    - Mac: **Cmd + Shift + 4**
@@ -133,7 +159,11 @@ Now break it:
 2. Go to Google Classroom, click **Classwork**, click **HTML Basics — Roster Page, Part 1: Page Structure**, then **View assignment**.
 3. Under **Your work**, click **Add or create**, click **File**, upload your screenshot, then click **Turn in** twice.
 
-   ☐ My screenshot is attached and the assignment shows **Turned in**.
+   ☐ My screenshots are attached and the assignment shows **Turned in**.
+
+Submit the screenshots to this assignment on Google Classroom.
+
+Keep the terminal open — spot-checks.
 
 ---
 
@@ -161,4 +191,4 @@ The exact step number where I got stuck: ________     The message on my screen s
 
 My confidence in writing HTML right now (circle one):   1   2   3   4   5
 
-**Done early?** Help a classmate get their row on the table. Do NOT start adding columns or more players — that is Part 2 next Tuesday.
+**Done early?** Help a classmate get their row on the table. Do NOT start adding columns or more players — that is Roster Page, Part 2.
