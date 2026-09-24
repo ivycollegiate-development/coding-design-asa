@@ -1,6 +1,6 @@
 # Lesson 03 — Roster Page, Part 1: Page Structure
 
-**Coding/Design ASA (Tue/Thu 4:30–5:45 PM) — Thursday, September 17, 2026**
+**Coding/Design ASA (Tue/Thu 4:30–5:45 PM) — Thursday, September 24, 2026**
 **Name: ______________________**
 
 Today you start building the Teams screen of our basketball app with HTML — the page every visitor sees first. Work through the Parts in order. Every step tells you exactly what to click or type. If your screen does not look like what this lesson says, stop and raise your hand — do not guess.
@@ -8,10 +8,10 @@ Today you start building the Teams screen of our basketball app with HTML — th
 **Links you will need**
 
 - Your code workspace: https://vscode.ivycollegiate.org/ (sign in with your SCHOOL account — personal Gmail will not work)
-- Your own repo: https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME (private — replace YOURUSERNAME with your code-server username; the exact name is in the setup sheet below)
+- Your own repo: a PRIVATE repo only you can see, named `asa-roster-page-part1-` + your code-server username (example: username `cyen29` → repo `asa-roster-page-part1-cyen29`). Because every student has a different repo, this is not one clickable link — your exact repo name is in your row of the setup sheet. To open it in a browser: sign in at https://github.com, click your profile icon (top right), then **Your repositories**.
 - Setup sheet: GitHub Account Setup — Coding/Design ASA (linked in today's Classwork assignment) — do this first if you have never cloned or pushed before
 - Reference project repo: https://github.com/ivycollegiate-development/coding-design-asa
-- Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0917 (linked in today's Classwork assignment)
+- Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0924 (linked in today's Classwork assignment)
 
 ---
 
@@ -105,6 +105,14 @@ Now break it:
 
    ☐ My team name is the heading, and my row shows in the table.
 
+4. Click in the terminal, type exactly this, and press Enter:
+
+   ```
+   python3 self_check.py
+   ```
+
+   It should say `3 of 4 checks passing` — the only FAIL should be `work committed` (that one waits for Part 5). Any other FAIL line tells you exactly what to fix.
+
 ---
 
 ## Part 5 — Push your work to GitHub (5 min)
@@ -112,6 +120,8 @@ Now break it:
 1. Click in the terminal — press **Ctrl + C** once to stop the little server, then type exactly this, pressing Enter after each line:
 
    ```
+   git config pull.rebase false
+   git pull
    git add .
    git commit -m "roster page part 1"
    git push
@@ -119,7 +129,9 @@ Now break it:
 
    Warning: the first push asks for your GitHub **username** and then a **password**. The password is a Personal Access Token, never your GitHub password — see Part E of the setup sheet. If you do not have a token yet, raise your hand and we do it together.
 
-   ☐ The push ended with something like `Writing objects: 100%`.
+2. Run the self-check one last time — it should now say `4 of 4 checks passing`. My grade bot runs the same checks on github.com after every push: open your repo, click the **Actions** tab, look for the green check.
+
+   ☐ The push ended with something like `Writing objects: 100%`, and the Actions tab shows a green check.
 
 ---
 
@@ -130,6 +142,9 @@ Now break it:
    - Windows: **Windows key + Shift + S**
    - Mac: **Cmd + Shift + 4**
    - iPad: side button + volume-up
+
+Then take a second screenshot of your repo on github.com — the **Actions** tab, where my grade bot posts your self-check score (looking for **4 of 4 checks passing**).
+
 2. Go to Google Classroom, click **Classwork**, click **HTML Basics — Roster Page, Part 1: Page Structure**, then **View assignment**.
 3. Under **Your work**, click **Add or create**, click **File**, upload your screenshot, then click **Turn in** twice.
 
