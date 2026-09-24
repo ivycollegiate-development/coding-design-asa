@@ -17,7 +17,7 @@ the intro exercises for our Basketball Stats App.
 |---|---|---|
 | [`01-hello-html/`](01-hello-html/index.html) | Your first web page | Sep 10 |
 | [`02-menu-buttons/`](02-menu-buttons/index.html) | Build the main menu (Teams / New Game / Pro Account) | Sep 15 |
-| [`03-roster-table/`](03-roster-table/index.html) | Start of the Teams screen — [lesson](03-roster-table/L03-Roster-Page-Part-1.md) | Sep 17 |
+| [`03-roster-table/`](03-roster-table/index.html) | Start of the Teams screen — [lesson](03-roster-table/L03-Roster-Page-Part-1.md) — self_check.py + grade bot | Sep 24 |
 
 ## The git cycle (memorize this)
 
