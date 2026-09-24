@@ -1,6 +1,6 @@
 # Lesson 03 — Roster Page, Part 1: Page Structure
 
-**Coding/Design ASA (Tue/Thu 4:30–5:45 PM) — Thursday, September 17, 2026**
+**Coding/Design ASA (Tue/Thu 4:30–5:45 PM) — Thursday, September 24, 2026**
 **Name: ______________________**
 
 Today you start building the Teams screen of our basketball app with HTML — the page every visitor sees first. Work through the Parts in order. Every step tells you exactly what to click or type. If your screen does not look like what this lesson says, stop and raise your hand — do not guess.
@@ -8,10 +8,10 @@ Today you start building the Teams screen of our basketball app with HTML — th
 **Links you will need**
 
 - Your code workspace: https://vscode.ivycollegiate.org/ (sign in with your SCHOOL account — personal Gmail will not work)
-- Your own repo: https://github.com/ivycollegiate-development/asa-roster-page-part1-$(whoami) (private — `$(whoami)` inserts your code-server username automatically, so copy the commands exactly as written)
+- Your own repo: a PRIVATE repo only you can see, named `asa-roster-page-part1-` + your code-server username (example: username `cyen29` → repo `asa-roster-page-part1-cyen29`). Because every student has a different repo, this is not one clickable link — your exact repo name is in your row of the setup sheet. To open it in a browser: sign in at https://github.com, click your profile icon (top right), then **Your repositories**.
 - Setup sheet: GitHub Account Setup — Coding/Design ASA (linked in today's Classwork assignment) — do this first if you have never cloned or pushed before
 - Reference project repo: https://github.com/ivycollegiate-development/coding-design-asa
-- Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0917 (linked in today's Classwork assignment)
+- Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0924 (linked in today's Classwork assignment)
 
 ---
 
@@ -19,28 +19,14 @@ Today you start building the Teams screen of our basketball app with HTML — th
 
 1. Open Chrome and go to https://vscode.ivycollegiate.org/ — click **Open your session** and sign in with your SCHOOL account.
 2. Click **Terminal** in the menu bar at the top of the window, then click **New Terminal**.
-3. Click inside the terminal and check whether you already have the repo from a previous session:
+3. Click inside the terminal, type exactly this, and press Enter after each line. **YOURUSERNAME is your code-server username — the exact repo name is in your row of the setup sheet.**
 
    ```
-   ls asa-roster-page-part1-$(whoami)
+   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME.git
+   cd asa-roster-page-part1-YOURUSERNAME
    ```
 
-   - If you see `No such file or directory`, clone it (type exactly this, pressing Enter after each line — `$(whoami)` inserts your code-server username automatically):
-
-     ```
-     git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-$(whoami).git
-     cd asa-roster-page-part1-$(whoami)
-     ```
-
-   - If the folder is already there, pull my latest updates before you work:
-
-     ```
-     cd asa-roster-page-part1-$(whoami)
-     git config pull.rebase false
-     git pull
-     ```
-
-   ☐ My terminal shows the repo (cloned or pulled) with no red text. If it shows anything red, raise your hand.
+   ☐ My terminal cloned the repo with no red text. If it shows anything red, raise your hand.
 
 4. In the file tree on the left, click the folder named `03-roster-table`, then double-click the file named `index.html`. It opens in the editor.
 
@@ -119,6 +105,14 @@ Now break it:
 
    ☐ My team name is the heading, and my row shows in the table.
 
+4. Click in the terminal, type exactly this, and press Enter:
+
+   ```
+   python3 self_check.py
+   ```
+
+   It should say `3 of 4 checks passing` — the only FAIL should be `work committed` (that one waits for Part 5). Any other FAIL line tells you exactly what to fix.
+
 ---
 
 ## Part 5 — Push your work to GitHub (5 min)
@@ -133,37 +127,28 @@ Now break it:
    git push
    ```
 
-   If the push is rejected, run **git pull**, then **git push** again — that is normal, not an error.
-
    Warning: the first push asks for your GitHub **username** and then a **password**. The password is a Personal Access Token, never your GitHub password — see Part E of the setup sheet. If you do not have a token yet, raise your hand and we do it together.
 
-   ☐ The push ended with something like `Writing objects: 100%`.
+2. Run the self-check one last time — it should now say `4 of 4 checks passing`. My grade bot runs the same checks on github.com after every push: open your repo, click the **Actions** tab, look for the green check.
+
+   ☐ The push ended with something like `Writing objects: 100%`, and the Actions tab shows a green check.
 
 ---
 
-## Part 6 — TURN IN — SCREENSHOTS (due end of class tonight)
+## Part 6 — Send me proof (5 min)
 
-One screenshot showing, in order:
-
-1. Your Simple Browser with your finished roster page — your team name in the heading and your own row in the table.
-
-Then take a second screenshot of your repo on github.com so I can see your commit landed.
-
-(Screenshot keys — Chromebook: hold **Ctrl + Shift** and press **Show windows**; Windows: **Windows key + Shift + S**; Mac: **Cmd + Shift + 4**; iPad: side button + volume-up.)
-
-1. Take the first screenshot of your Simple Browser showing your finished page (heading + table with your row).
+1. Take a screenshot of your Simple Browser showing your finished page (heading + table with your row).
    - Chromebook: hold **Ctrl + Shift** and press the **Show windows** key
    - Windows: **Windows key + Shift + S**
    - Mac: **Cmd + Shift + 4**
    - iPad: side button + volume-up
+
+Then take a second screenshot of your repo on github.com — the **Actions** tab, where my grade bot posts your self-check score (looking for **4 of 4 checks passing**).
+
 2. Go to Google Classroom, click **Classwork**, click **HTML Basics — Roster Page, Part 1: Page Structure**, then **View assignment**.
 3. Under **Your work**, click **Add or create**, click **File**, upload your screenshot, then click **Turn in** twice.
 
-   ☐ My screenshots are attached and the assignment shows **Turned in**.
-
-Submit the screenshots to this assignment on Google Classroom.
-
-Keep the terminal open — spot-checks.
+   ☐ My screenshot is attached and the assignment shows **Turned in**.
 
 ---
 
@@ -191,4 +176,4 @@ The exact step number where I got stuck: ________     The message on my screen s
 
 My confidence in writing HTML right now (circle one):   1   2   3   4   5
 
-**Done early?** Help a classmate get their row on the table. Do NOT start adding columns or more players — that is Roster Page, Part 2.
+**Done early?** Help a classmate get their row on the table. Do NOT start adding columns or more players — that is Part 2 next Tuesday.
