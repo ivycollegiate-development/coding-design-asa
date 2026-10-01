@@ -15,9 +15,10 @@ the intro exercises for our Basketball Stats App.
 
 | Folder | Exercise | When |
 |---|---|---|
-| [`01-hello-html/`](01-hello-html/index.html) | Your first web page | Sep 10 |
-| [`02-menu-buttons/`](02-menu-buttons/index.html) | Build the main menu (Teams / New Game / Pro Account) | Sep 15 |
-| [`03-roster-table/`](03-roster-table/index.html) | Start of the Teams screen — [lesson](03-roster-table/L03-Roster-Page-Part-1.md) — self_check.py + grade bot | Sep 24 |
+| [`01-hello-html/`](01-hello-html/index.html) | Your first web page — [lesson](01-hello-html/L01-Hello-HTML-Part-1-Your-First-Web-Page.md) | L01 |
+| [`02-menu-buttons/`](02-menu-buttons/index.html) | Build the main menu (Teams / New Game / Pro Account) — [lesson](02-menu-buttons/L02-Menu-Buttons-Part-1-The-Main-Menu.md) | L02 |
+| [`03-roster-table/`](03-roster-table/index.html) | Start of the Teams screen — [lesson](03-roster-table/L03-Roster-Page-Part-1.md) — self_check.py + grade bot | L03 |
+| [`04-roster-stats/`](04-roster-stats/index.html) | Add the fourth column — [lesson](04-roster-stats/L04-Roster-Page-Part-2-Adding-A-Column.md) — self_check_stats.py | L04 |
 
 ## The git cycle (memorize this)
 

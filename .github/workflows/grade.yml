@@ -19,5 +19,15 @@ jobs:
           echo "score=$(tail -1 "$HOME/check_output.txt")" >> $GITHUB_OUTPUT
         continue-on-error: true
 
+      - name: Run L04 stats self-check
+        id: selfcheck_stats
+        if: hashFiles('self_check_stats.py') != ''
+        run: |
+          python3 self_check_stats.py | tee "$HOME/check_output_stats.txt"
+          echo "score=$(tail -1 "$HOME/check_output_stats.txt")" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
       - name: Summary
-        run: echo "### Roster page check — ${{ steps.selfcheck.outputs.score }}" >> $GITHUB_STEP_SUMMARY
+        run: |
+          echo "### Roster page (L03) — ${{ steps.selfcheck.outputs.score }}" >> $GITHUB_STEP_SUMMARY
+          echo "### Roster stats (L04) — ${{ steps.selfcheck_stats.outputs.score }}" >> $GITHUB_STEP_SUMMARY
