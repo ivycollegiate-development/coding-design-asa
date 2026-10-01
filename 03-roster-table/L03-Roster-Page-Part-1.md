@@ -8,7 +8,7 @@ Today you start building the Teams screen of our basketball app with HTML — th
 **Links you will need**
 
 - Your code workspace: https://vscode.ivycollegiate.org/ (sign in with your SCHOOL account — personal Gmail will not work)
-- Your own repo: named `asa-roster-page-part1-` + your code-server username + `_student` (example: username `cyen29` → repo `asa-roster-page-part1-cyen29_student`). Note the two punctuation rules: a **dash** before your username, an **underscore** before `student`. Because every student has a different repo, this is not one clickable link — your exact repo name is in your row of the setup sheet. To open it in a browser: sign in at https://github.com, click your profile icon (top right), then **Your repositories**.
+- Your own repo: named `asa-roster-page-part1-` + your code-server username + `_student` (example: username `cyen29` → repo `asa-roster-page-part1-cyen29_student`). Note the two punctuation rules: a **dash** before your username, an **underscore** before `student`. You do NOT type your username anywhere — the command in Part 1 works it out for you with `$(whoami)`. Because every student has a different repo, this is not one clickable link; to open yours in a browser: sign in at https://github.com, click your profile icon (top right), then **Your repositories**.
 - Setup sheet: GitHub Account Setup — Coding/Design ASA (linked in today's Classwork assignment) — do this first if you have never cloned or pushed before
 - Reference project repo: https://github.com/ivycollegiate-development/coding-design-asa
 - Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0924 (linked in today's Classwork assignment)
@@ -19,16 +19,18 @@ Today you start building the Teams screen of our basketball app with HTML — th
 
 1. Open Chrome and go to https://vscode.ivycollegiate.org/ — click **Open your session** and sign in with your SCHOOL account.
 2. Click **Terminal** in the menu bar at the top of the window, then click **New Terminal**.
-3. Click inside the terminal, type exactly this, and press Enter after each line. **YOURUSERNAME is your code-server username — the exact repo name is in your row of the setup sheet.** Note the folder on your computer is always named `asa-roster-page-part1` — the same for everyone, so nobody clones into a differently-named folder by accident.
+3. Click inside the terminal, type exactly this, and press Enter after each line. **Copy it exactly — `$(whoami)` is not a typo, it fills in your username for you.** The folder on your computer is always named `asa-roster-page-part1` — the same for everyone, so nobody clones into a differently-named folder by accident.
 
    ```
-   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME_student.git asa-roster-page-part1
+   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-$(whoami)_student.git asa-roster-page-part1
    cd asa-roster-page-part1
    ```
 
-   ☐ My terminal cloned the repo with no red text. If it shows anything red, raise your hand.
+   ☐ My terminal cloned the repo with no red text. If it says `repository not found`, your username is not spelled the way your repo is — compare the two and raise your hand.
 
-4. In the file tree on the left, click the folder named `03-roster-table`, then double-click the file named `index.html`. It opens in the editor.
+4. Prove it worked: type `ls` and press Enter. You should see `03-roster-table`, `README.md`, and `self_check.py`.
+
+5. In the file tree on the left, click the folder named `03-roster-table`, then double-click the file named `index.html`. It opens in the editor.
 
    ☐ I can see `index.html` open with words like `<!DOCTYPE html>` and `<table>` in it.
 
