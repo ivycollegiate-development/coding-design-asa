@@ -1,6 +1,6 @@
 # Lesson 03 — Roster Page, Part 1: Page Structure
 
-**Coding/Design ASA (Tue/Thu 4:30–5:45 PM) — Thursday, September 24, 2026**
+**Coding/Design ASA (Tue/Thu 4:30–5:45 PM) — Lesson 03**
 **Name: ______________________**
 
 Today you start building the Teams screen of our basketball app with HTML — the page every visitor sees first. Work through the Parts in order. Every step tells you exactly what to click or type. If your screen does not look like what this lesson says, stop and raise your hand — do not guess.
@@ -8,7 +8,7 @@ Today you start building the Teams screen of our basketball app with HTML — th
 **Links you will need**
 
 - Your code workspace: https://vscode.ivycollegiate.org/ (sign in with your SCHOOL account — personal Gmail will not work)
-- Your own repo: a PRIVATE repo only you can see, named `asa-roster-page-part1-` + your code-server username (example: username `cyen29` → repo `asa-roster-page-part1-cyen29`). Because every student has a different repo, this is not one clickable link — your exact repo name is in your row of the setup sheet. To open it in a browser: sign in at https://github.com, click your profile icon (top right), then **Your repositories**.
+- Your own repo: named `asa-roster-page-part1-` + your code-server username + `_student` (example: username `cyen29` → repo `asa-roster-page-part1-cyen29_student`). Note the two punctuation rules: a **dash** before your username, an **underscore** before `student`. Because every student has a different repo, this is not one clickable link — your exact repo name is in your row of the setup sheet. To open it in a browser: sign in at https://github.com, click your profile icon (top right), then **Your repositories**.
 - Setup sheet: GitHub Account Setup — Coding/Design ASA (linked in today's Classwork assignment) — do this first if you have never cloned or pushed before
 - Reference project repo: https://github.com/ivycollegiate-development/coding-design-asa
 - Worksheet for today: HTML Basics — Roster Page Part 1 Worksheet 0924 (linked in today's Classwork assignment)
@@ -19,11 +19,11 @@ Today you start building the Teams screen of our basketball app with HTML — th
 
 1. Open Chrome and go to https://vscode.ivycollegiate.org/ — click **Open your session** and sign in with your SCHOOL account.
 2. Click **Terminal** in the menu bar at the top of the window, then click **New Terminal**.
-3. Click inside the terminal, type exactly this, and press Enter after each line. **YOURUSERNAME is your code-server username — the exact repo name is in your row of the setup sheet.**
+3. Click inside the terminal, type exactly this, and press Enter after each line. **YOURUSERNAME is your code-server username — the exact repo name is in your row of the setup sheet.** Note the folder on your computer is always named `asa-roster-page-part1` — the same for everyone, so nobody clones into a differently-named folder by accident.
 
    ```
-   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME.git
-   cd asa-roster-page-part1-YOURUSERNAME
+   git clone https://github.com/ivycollegiate-development/asa-roster-page-part1-YOURUSERNAME_student.git asa-roster-page-part1
+   cd asa-roster-page-part1
    ```
 
    ☐ My terminal cloned the repo with no red text. If it shows anything red, raise your hand.
@@ -31,6 +31,16 @@ Today you start building the Teams screen of our basketball app with HTML — th
 4. In the file tree on the left, click the folder named `03-roster-table`, then double-click the file named `index.html`. It opens in the editor.
 
    ☐ I can see `index.html` open with words like `<!DOCTYPE html>` and `<table>` in it.
+
+**Already cloned before?** Skip step 3. Just pull, then open the file:
+
+```
+cd asa-roster-page-part1
+git config pull.rebase false
+git pull
+```
+
+Same folder name every session. If you ever get `already exists` when cloning, you already have the folder — use the pull block instead.
 
 ---
 
@@ -176,4 +186,4 @@ The exact step number where I got stuck: ________     The message on my screen s
 
 My confidence in writing HTML right now (circle one):   1   2   3   4   5
 
-**Done early?** Help a classmate get their row on the table. Do NOT start adding columns or more players — that is Part 2 next Tuesday.
+**Done early?** Help a classmate get their row on the table. Do NOT start adding columns or more players — that is L04.
